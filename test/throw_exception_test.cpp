@@ -8,6 +8,10 @@
 
 #include <boost/config.hpp>
 
+#ifdef _MSC_VER
+# pragma warning(disable: 4702)	// unreachable code
+#endif
+
 class my_exception: public std::exception { };
 
 int
